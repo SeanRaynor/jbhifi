@@ -22,7 +22,13 @@ class JBHIFI{
         $generatedURL = $baseUrl . '?affilliateid=' . $affilliateid . '&ts=' . $ts . '&hash=' . $hash;
         return $generatedURL;
     }
+
+    public static function redirectToGeneratedURL(){
+        $url = self::generateJBCorporateBenefitsURL();
+        header('Location: ' . $url);
+        exit; // Ensure script execution ends here
+    }
 }
 
-echo JBHIFI::generateJBCorporateBenefitsURL();
+JBHIFI::redirectToGeneratedURL();
 ?>
