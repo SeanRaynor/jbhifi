@@ -9,7 +9,7 @@ class JBHIFI{
 
     
         //Set configurables
-        $affilliateid = '12345';
+        $affilliateid = '15914';
         $ts = date('Ymd_His', time()); //20220824_100426
         $secret = '1e1f55fehffe344434343418a4c158110a14e928ed7';
 
