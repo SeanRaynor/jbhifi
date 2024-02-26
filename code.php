@@ -11,7 +11,7 @@ class JBHIFI{
         //Set configurables
         $affilliateid = '15914';
         $ts = date('Ymd_His', time()); //20220824_100426
-        $secret = '1e1f55fehffe344434343418a4c158110a14e928ed7';
+        $secret = '02bdfb51df1ad5824dcd2971c0ec6810b54e14c3';
 
         //generate MD5 hash
         $hash = md5(''.$affilliateid.''.$ts.''.$secret.'');
