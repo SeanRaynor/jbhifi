@@ -34,6 +34,7 @@ class JBHIFI{
             exit; // Ensure script execution ends here if redirected
         } else {
             echo "Access denied."; // Message displayed if the IP doesn't match
+            echo $clientIP;
         }
     }
 }
